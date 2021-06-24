@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import ButtonGroup from "./components/ButtonGroup";
 import HelloWorld from "./HelloWorld";
 
+import { store } from './store';
+
 const App = () => {
-  const [tech] = useState("React");
-  return <HelloWorld tech={tech} />;
+  
+  return <div>
+    <HelloWorld tech={store.getState().tech} />
+    <ButtonGroup technologies={["React", "Elm", "React-Redux"]} />
+  </div>
 };
 
 export default App;

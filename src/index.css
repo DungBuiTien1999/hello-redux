@@ -42,3 +42,25 @@ body {
   font-weight: 700;
   font-style: italic;
 }
+
+.btn-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.2em;
+}
+
+.btn {
+  background: rgb(114, 114, 221);
+  color: #fff;
+  border-radius: 1rem;
+  border: transparent;
+  padding: 0.7em;
+  cursor: pointer;
+}
+
+/* .btn:hover {
+  background: #fff;
+  color: rgb(114, 114, 221);
+  font-weight: 600;
+  border: 5px solid rgb(114, 114, 221);
+} */
